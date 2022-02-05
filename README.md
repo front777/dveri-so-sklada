@@ -1,0 +1,1 @@
+# dveri-so-sklada
