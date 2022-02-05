@@ -262,7 +262,21 @@
 
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-    <script src="door.js"></script>
+    <script src="door.js">
+    $("#next").click(function () {
+	$("#slider-photos").animate({ scrollLeft: "+=1000px" }, 400);
+});
+$("#prew").click(function () {
+	$("#slider-photos").animate({ scrollLeft: "-=1000px" }, 400);
+});
+$("#menu-bar").click(function () {
+	$("#burger-menu").css("display", "block");
+});
+$("#close-bar").click(function () {
+	$("#burger-menu").css("display", "none");
+});
+    
+    </script>
 </body>
 
 </html>
